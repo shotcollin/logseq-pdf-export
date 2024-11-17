@@ -28,6 +28,7 @@ const App3: React.FC<{htmlText}> = ({htmlText}) => {
       <div className="bg-slate-400 z-30 rounded-2xl p-4">
       
         <h1 className="font-bold text-4xl" >PDF Preview</h1>
+        <div className=''><button className='button' onClick={() => downloadBulletLess()}>Download</button></div>
         <br></br>
         <div dangerouslySetInnerHTML={{__html: htmlText}} id = "cooldiv" className='bg-white rounded-xl'></div> 
         <br></br>
